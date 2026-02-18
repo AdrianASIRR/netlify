@@ -37,5 +37,5 @@ jobs:
         with:
           args: deploy --prod --dir=dist
         env:
-          NETLIFY_SITE_ID: 3341335e-b8c6-489a-9a47-1014051d57d6
-          NETLIFY_AUTH_TOKEN: nfp_vsQPYvcTQA3sSc5oLJZCppWCqW93CzWBb681
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
